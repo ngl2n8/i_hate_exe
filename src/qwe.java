@@ -5,17 +5,8 @@ public class qwe {
     }
     boolean proverka(String string){
         boolean qwe=true;
-        int foo=0;
-        for(char a: string.toCharArray()){
-            qwe = (a>122||a<48)&&(a>57&&a>122||a>48&&a!=95)?qwe=false:true;
-            if(qwe==false){
-                foo+=1;
-                qwe=true;
-            }
-
-
-        }
-        if(foo>0)return false;
+        for(char a: string.toCharArray()){qwe = (a>122||a<48)&&(a>57&&a>122||a>48&&a!=95)?qwe=false:true;}
+        if(qwe==false)return false;
         return true;
     }
 
